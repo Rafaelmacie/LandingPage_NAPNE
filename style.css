@@ -1,0 +1,45 @@
+/*Estilização dos filtros para adaptação de cores*/
+/* Protanope (ausência de cones vermelhos) */
+.visao-protanopia {
+    filter: sepia(50%) hue-rotate(90deg) saturate(150%);
+}
+
+/* Deuteranope (ausência de cones verdes) */
+.visao-deuteranopia {
+    filter: sepia(50%) hue-rotate(90deg) saturate(100%);
+}
+
+/* Tritanope (ausência de cones azuis) */
+.visao-tritanopia {
+    filter: sepia(50%) hue-rotate(150deg) saturate(150%);
+}
+
+/* Monocromacia */
+.visao-monocromacia {
+    filter: grayscale(100%);
+}
+
+/* Estilos padrão para o corpo (sem filtro) */
+.visao-normal img {
+    filter: none;
+}
+
+/* Protanope (ausência de cones vermelhos) */
+.visao-protanopia img {
+    filter: sepia(50%) hue-rotate(90deg) saturate(150%);
+}
+
+/* Deuteranope (ausência de cones verdes) */
+.visao-deuteranopia img {
+    filter: sepia(50%) hue-rotate(90deg) saturate(100%);
+}
+
+/* Tritanope (ausência de cones azuis) */
+.visao-tritanopia img {
+    filter: sepia(50%) hue-rotate(150deg) saturate(150%);
+}
+
+/* Monocromacia */
+.visao-monocromacia img {
+    filter: grayscale(100%);
+}
