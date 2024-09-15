@@ -43,3 +43,223 @@
 .visao-monocromacia img {
     filter: grayscale(100%);
 }
+
+/* Estilização do corpo */
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header nav img {
+    height: 50px;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header nav ul li {
+    margin-right: 20px;
+}
+
+.header nav a {
+    text-decoration: none;
+    color: #343a40;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+}
+
+.header nav select {
+    margin-left: auto;
+}
+
+
+main {
+    padding: 2rem;
+}
+
+.carrosel {
+    margin-bottom: 2rem;
+}
+
+.carousel-inner img {
+    border-radius: 0.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #343a40;
+}
+
+#line-qm {
+    border-bottom: 2px solid #343a40;
+    width: 100px;
+    margin-bottom: 2rem;
+}
+
+.quem_somos {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.quem_somos p {
+    flex: 1;
+}
+
+.quem_somos img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.objetivos {
+    margin-bottom: 2rem;
+}
+
+.objetivos p {
+    margin-bottom: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.item {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.yellow { background-color: #f9c74f; }
+.red { background-color: #f94144; }
+.brown { background-color: #6a4c41; }
+.blue { background-color: #577590; }
+.pink { background-color: #f984a1; }
+.green { background-color: #90be6d; }
+.purple { background-color: #9d4edd; }
+.orange { background-color: #f8961e; }
+.light-blue { background-color: #4ea1d3; }
+
+.text {
+    flex: 1;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    flex: 1 1 calc(33.333% - 1rem);
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.card-description {
+    color: #6c757d;
+}
+
+.cordenadores {
+    margin-bottom: 2rem;
+}
+
+.container-corden {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card-corden {
+    flex: 1 1 calc(33.333% - 1rem);
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.card-corden img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer img {
+    margin: 0 0.5rem;
+    max-height: 40px;
+}
+
+.footer a {
+    color: #fff;
+    margin: 0 0.5rem;
+}
+
+.footer a:hover {
+    color: #007bff;
+}
+
+/* Estilo para os controles do carrossel */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
