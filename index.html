@@ -23,15 +23,15 @@
                 <li><a href="#contatos">Contatos</a></li>
             </ul>
             <select name="select-color" id="colorMode"> <!-- Adicionado ID -->
-                <option value="visao-normal" selected>Visão Normal</option>
-                <option value="visao-deuteranopia">Deuteranopia</option>
-                <option value="visao-monocromacia">Monocromacia</option>
-                <option value="visao-protanopia">Protanopia</option>
-                <option value="visao-tritanopia">Tritanopia</option>
+                <option value="">Nenhum Filtro</option>
+                <option value="protanopia">Protanopia</option>
+                <option value="deuteranopia">Deuteranopia</option>
+                <option value="tritanopia">Tritanopia</option>
+                <option value="high-contrast">Alto Contraste</option>
             </select>
         </nav>
     </header>
-    <main>
+   
         <div class="carrosel">
             <div class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
@@ -39,10 +39,10 @@
                         <img src="imgs/image (9).png" class="d-block w-100" alt="Imagem 1">
                     </div>
                     <div class="carousel-item">
-                        <img src="imgs/image (1).png" class="d-block w-100" alt="Imagem 2">
+                        <img src="imgs/image (5).png" class="d-block w-100" alt="Imagem 2">
                     </div>
                     <div class="carousel-item">
-                        <img src="imgs/image (2).png" class="d-block w-100" alt="Imagem 3">
+                        <img src="imgs/image (6).png" class="d-block w-100" alt="Imagem 3">
                     </div>
                 </div>
                 <!-- Controles do carrossel -->
@@ -56,16 +56,16 @@
                 </a>
             </div>
         </div>
-
+ <main>
         <h2 id="quem_somos">Quem somos</h2><!--"Título"-->
-        <div id="line-qm"></div><!--Linha de separação-->
+        <div class="line" id="line-qm"></div><!--Linha de separação-->
         <div class="quem_somos">
             <p>Somos o Núcleo de Acessibilidade às Pessoas com Necessidades Educacionais Específicas, e nosso compromisso é quebrar barreiras e promover inclusão. Com o objetivo de garantir o acesso, a permanência e o sucesso educacional dos estudantes com necessidades educacionais específicas no IFCE Campus Boa Viagem, trabalhamos incansavelmente para construir um ambiente acolhedor para todes.Desde adequações arquitetônicas até a adaptação de metodologias de ensino, estamos empenhados em garantir a igualdade de oportunidades para cada membro da nossa comunidade.</p>
             <img src="imgs/logo-napne.webp" alt="Logo napne">
         </div>
 
         <h2 id="objetivos">Objetivos</h2><!--"Título"-->
-        <div id="line-qm"></div><!--Linha de separação-->
+        <div class="line" id="line-obj"></div><!--Linha de separação-->
             <div class="objetivos">
                 <p>O NAPNE é formado por docentes, técnicos administrativos e alunos do IFCE Boa Viagem e da comunidade externa, criado em 2023, visando trazer maior equidade para alunos que compõem o Campus. Alguns de nossos objetivos são:</p>
                 <div class="container">
@@ -110,104 +110,129 @@
             </div>
 
         <h2 id="projetos">Projetos</h2><!--"Título"-->
-        <div id="line-qm"></div><!--Linha de separação-->
+        <div class="line" id="line-proj"></div><!--Linha de separação-->
         <div class="projetos">
             <p>O NAPNE é formado por docentes, técnicos administrativos e alunos do IFCE Boa Viagem e da comunidade externa, criado em 2023, visando trazer maior equidade para alunos que compõem o Campus.</p>
-            <div class="card-container">
-                <div class="card">
-                    <img src="imgs/1.png" alt="Imagem 1">
-                    <div class="card-content">
-                        <div class="card-title">Projeto 0000</div>
-                        <div class="card-description">Descrição do projeto</div>
+            <div class="container">
+                <div class="row card-container">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="imgs/1.png" class="card-img-top" alt="Imagem 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Projeto 0000</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta dolores ullam necessitatibus, nisi modi temporibus minus provident laboriosam fugit qui optio molestias blanditiis delectus ex, minima a. Corrupti, assumenda adipisci?</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <img src="imgs/2.png" alt="Imagem 2">
-                    <div class="card-content">
-                        <div class="card-title">Projeto 0000</div>
-                        <div class="card-description">Descrição do projeto</div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="imgs/2.png" class="card-img-top" alt="Imagem 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Projeto 0000</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta dolores ullam necessitatibus, nisi modi temporibus minus provident laboriosam fugit qui optio molestias blanditiis delectus ex, minima a. Corrupti, assumenda adipisci?</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <img src="imgs/3.png" alt="Imagem 3">
-                    <div class="card-content">
-                        <div class="card-title">Projeto 0000</div>
-                        <div class="card-description">Descrição do projeto</div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="imgs/3.png" class="card-img-top" alt="Imagem 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Projeto 0000</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta dolores ullam necessitatibus, nisi modi temporibus minus provident laboriosam fugit qui optio molestias blanditiis delectus ex, minima a. Corrupti, assumenda adipisci?</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <img src="imgs/4.png" alt="Imagem 4">
-                    <div class="card-content">
-                        <div class="card-title">Projeto 0000</div>
-                        <div class="card-description">Descrição do projeto</div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="imgs/4.png" class="card-img-top" alt="Imagem 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Projeto 0000</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta dolores ullam necessitatibus, nisi modi temporibus minus provident laboriosam fugit qui optio molestias blanditiis delectus ex, minima a. Corrupti, assumenda adipisci?</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <img src="imgs/5.png" alt="Imagem 5">
-                    <div class="card-content">
-                        <div class="card-title">Projeto 0000</div>
-                        <div class="card-description">Descrição do projeto</div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="imgs/5.png" class="card-img-top" alt="Imagem 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Projeto 0000</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta dolores ullam necessitatibus, nisi modi temporibus minus provident laboriosam fugit qui optio molestias blanditiis delectus ex, minima a. Corrupti, assumenda adipisci?</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <img src="imgs/1.png" alt="Imagem 6">
-                    <div class="card-content">
-                        <div class="card-title">Projeto 0000</div>
-                        <div class="card-description">Descrição do projeto</div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="imgs/6.png" class="card-img-top" alt="Imagem 6">
+                            <div class="card-body">
+                                <h5 class="card-title">Projeto 0000</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta dolores ullam necessitatibus, nisi modi temporibus minus provident laboriosam fugit qui optio molestias blanditiis delectus ex, minima a. Corrupti, assumenda adipisci?</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            
+         
+            
 
         <h2 id="cordenadores">Cordenadores</h2><!--"Título"-->
-        <div id="line-qm"></div><!--Linha de separação-->
+        <div class="line" id="line-cord"></div><!--Linha de separação-->
         <div class="cordenadores">
             <div class="container-corden">
                 <div class="card-corden">
-                    <img src="imgs/image (5).png" alt="Imagem 1" class="rounded-circle">
+                    <img src="imgs/image (2).png" alt="Imagem 1" class="rounded-circle">
+                    <br>
                     <h4>Jhonny</h4>
                 </div>
                 <div class="card-corden">
-                    <img src="imgs/image (6).png" alt="Imagem 1" class="rounded-circle">
+                    <img src="imgs/image (3).png" alt="Imagem 1" class="rounded-circle">
+                    <br>
                     <h4>Talita</h4>
                 </div>
                 <div class="card-corden">
-                    <img src="imgs/image (7).png" alt="Imagem 1" class="rounded-circle">
+                    <img src="imgs/image (4).png" alt="Imagem 1" class="rounded-circle">
+                    <br>
                     <h4>Camila</h4>
                 </div>
             </div>
             <div class="container-corden">
                 <div class="card-corden">
                     <img src="imgs/image (8).png" alt="Imagem 1" class="rounded-circle">
+                    <br>
                     <h4>Roselle</h4>
                 </div>
                 <div class="card-corden">
                     <img src="imgs/people.png" alt="Imagem 1" class="rounded-circle">
-                    <h4>Name</h4>
+                    <br>
+                    <h4>João</h4>
                 </div>
                 <div class="card-corden">
                     <img src="imgs/people.png" alt="Imagem 1" class="rounded-circle">
-                    <h4>Name</h4>
+                    <br>
+                    <h4>Maria</h4>
                 </div>
             </div>
             <div class="container-corden">
                 <div class="card-corden">
                     <img src="imgs/people.png" alt="Imagem 1" class="rounded-circle">
-                    <h4>Name</h4>
+                    <br>
+                    <h4>Nina</h4>
                 </div>
                 <div class="card-corden">
                     <img src="imgs/people.png" alt="Imagem 1" class="rounded-circle">
-                    <h4>Name</h4>
+                    <br>
+                    <h4>Joana</h4>
                 </div>
                 <div class="card-corden">
                     <img src="imgs/people.png" alt="Imagem 1" class="rounded-circle">
-                    <h4>Name</h4>
+                    <br>
+                    <h4>Valentina</h4>
                 </div>
             </div>
         </div>
 
         <h2 id="eventos">Eventos</h2><!--"Título"-->
-        <div id="line-qm"></div><!--Linha de separação-->
+        <div class="line" id="line-even"></div><!--Linha de separação-->
         <div class="eventos">
             <div class="container mt-5">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -218,24 +243,18 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="imgs/image (3).png" class="d-block w-100" alt="Imagem 1">
+                            <img src="imgs/image (1).png" class="d-block w-100" alt="Imagem 1">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Título do Slide 1</h5>
-                                <p>Texto descritivo do slide </p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="imgs/image (4).png" class="d-block w-100" alt="Imagem 2">
+                            <img src="imgs/image.png" class="d-block w-100" alt="Imagem 2">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Título do Slide 2</h5>
-                                <p>Texto descritivo do slide </p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="imgs/image (3).png" class="d-block w-100" alt="Imagem 3">
+                            <img src="imgs/image (1).png" class="d-block w-100" alt="Imagem 3">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Título do Slide 3</h5>
-                                <p>Texto descritivo do slide </p>
                             </div>
                         </div>
                     </div>
@@ -250,16 +269,18 @@
                 </div>
             </div>            
         </div>
-
-        <h2 id="contatos">Contatos</h2><!--"Título"-->
-        <div id="line-qm"></div><!--Linha de separação-->
     </main>
     <footer class="footer">
-        <img src="imgs/Instituto_Federal_do_Ceará_-_Marca_Vertical_2015_-_com_margens.svg.png" alt="logo ifce">
-        <img src="imgs/Logo_NAPNE_Horizontal_fundo_branco_3x.png" alt="logo horisoltal napne">
-        <a href="#"><img src="imgs/instagram.png" alt="logo instagram"></a>
-        <a href="#"><img src="imgs/facebook.png" alt="logo facebook"></a>
-        <a href="#"><img src="imgs/youtube.png" alt="logo youtube"></a>
+        <img class="social-icons" src="imgs/Instituto_Federal_do_Ceará_-_Marca_Vertical_2015_-_com_margens.svg.png" alt="logo ifce">
+        <br>
+        <img class="social-icons" src="imgs/Logo_NAPNE_Horizontal_fundo_branco_3x.png" alt="logo horisoltal napne">
+        <br>
+        <br>
+        <div class="midia">
+            <a href="#"><img class="social-icons" src="imgs/instagram.png" alt="logo instagram"></a>
+            <a href="#"><img class="social-icons" src="imgs/facebook.png" alt="logo facebook"></a>
+            <a href="#"><img class="social-icons" src="imgs/youtube.png" alt="logo youtube"></a>
+        </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>

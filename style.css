@@ -1,48 +1,24 @@
 /*Estilização dos filtros para adaptação de cores*/
-/* Protanope (ausência de cones vermelhos) */
-.visao-protanopia {
-    filter: sepia(50%) hue-rotate(90deg) saturate(150%);
+/* Filtro para Protanopia */
+.protanopia {
+    filter: url('#protanopia-filter'); /* Definir via SVG ou ajustar os valores */
 }
 
-/* Deuteranope (ausência de cones verdes) */
-.visao-deuteranopia {
-    filter: sepia(50%) hue-rotate(90deg) saturate(100%);
+/* Filtro para Deuteranopia */
+.deuteranopia {
+    filter: url('#deuteranopia-filter'); /* Definir via SVG ou ajustar os valores */
 }
 
-/* Tritanope (ausência de cones azuis) */
-.visao-tritanopia {
-    filter: sepia(50%) hue-rotate(150deg) saturate(150%);
+/* Filtro para Tritanopia */
+.tritanopia {
+    filter: url('#tritanopia-filter'); /* Definir via SVG ou ajustar os valores */
 }
 
-/* Monocromacia */
-.visao-monocromacia {
-    filter: grayscale(100%);
+/* Filtro para Alto Contraste */
+.high-contrast {
+    filter: contrast(150%) brightness(110%);
 }
 
-/* Estilos padrão para o corpo (sem filtro) */
-.visao-normal img {
-    filter: none;
-}
-
-/* Protanope (ausência de cones vermelhos) */
-.visao-protanopia img {
-    filter: sepia(50%) hue-rotate(90deg) saturate(150%);
-}
-
-/* Deuteranope (ausência de cones verdes) */
-.visao-deuteranopia img {
-    filter: sepia(50%) hue-rotate(90deg) saturate(100%);
-}
-
-/* Tritanope (ausência de cones azuis) */
-.visao-tritanopia img {
-    filter: sepia(50%) hue-rotate(150deg) saturate(150%);
-}
-
-/* Monocromacia */
-.visao-monocromacia img {
-    filter: grayscale(100%);
-}
 
 /* Estilização do corpo */
 
@@ -60,7 +36,7 @@ body {
 }
 
 .header {
-    background-color: #f8f9fa;
+    background-color: white;
     border-bottom: 1px solid #dee2e6;
 }
 
@@ -72,57 +48,89 @@ body {
 }
 
 .header nav img {
-    height: 50px;
+    height: 53px;
+    margin-left: auto;
 }
 
 .header nav ul {
     list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: auto;
 }
 
 .header nav ul li {
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 .header nav a {
     text-decoration: none;
     color: #343a40;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .header nav a:hover {
     text-decoration: underline;
 }
 
-.header nav select {
-    margin-left: auto;
+.header select{
+    height: 18px;
+    margin-right: auto;
 }
 
-
-main {
-    padding: 2rem;
-}
 
 .carrosel {
     margin-bottom: 2rem;
 }
 
 .carousel-inner img {
-    border-radius: 0.5rem;
+   width: 90%;
+   height: auto;
+}
+
+main{
+    margin: 40px;
+    padding: 40px;
 }
 
 h2 {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    font-weight: bold;
     color: #343a40;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+h4{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.line{
+    width: 100%;
+    height: 7px;
+    margin-bottom: 1rem;
 }
 
 #line-qm {
-    border-bottom: 2px solid #343a40;
-    width: 100px;
-    margin-bottom: 2rem;
+    background-color: #3F9738;
 }
+#line-obj {
+    background-color: #7C3688;
+}
+#line-proj {
+    background-color: #E25C06;
+}
+#line-cord {
+    background-color: #099CDA;
+}
+#line-even {
+    background-color: #BD0F17;
+}
+
+
+
 
 .quem_somos {
     display: flex;
@@ -167,14 +175,14 @@ h2 {
 }
 
 .yellow { background-color: #f9c74f; }
-.red { background-color: #f94144; }
+.red { background-color: #BD0F17; }
 .brown { background-color: #6a4c41; }
-.blue { background-color: #577590; }
+.blue { background-color: #7C3688; }
 .pink { background-color: #f984a1; }
-.green { background-color: #90be6d; }
+.green { background-color: #3F9738; }
 .purple { background-color: #9d4edd; }
 .orange { background-color: #f8961e; }
-.light-blue { background-color: #4ea1d3; }
+.light-blue { background-color: #099CDA; }
 
 .text {
     flex: 1;
@@ -183,34 +191,41 @@ h2 {
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    justify-content: space-around;
 }
 
 .card {
-    flex: 1 1 calc(33.333% - 1rem);
     border: 1px solid #ddd;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    background-color: #fff;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.card img {
-    width: 100%;
-    height: auto;
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-.card-content {
-    padding: 1rem;
+.card-img-top {
+    max-height: 300px;
+    object-fit: cover;
 }
 
 .card-title {
-    font-weight: 600;
-    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
 }
 
-.card-description {
-    color: #6c757d;
+.card-text {
+    font-size: 0.95rem;
+    color: #555;
 }
+
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
 
 .cordenadores {
     margin-bottom: 2rem;
@@ -225,7 +240,6 @@ h2 {
 .card-corden {
     flex: 1 1 calc(33.333% - 1rem);
     text-align: center;
-    background-color: #f8f9fa;
     padding: 1rem;
     border-radius: 0.5rem;
 }
@@ -238,15 +252,18 @@ h2 {
 }
 
 .footer {
-    background-color: #343a40;
-    color: #fff;
+    background-color: white;
+    border-top: 2px solid #dee2e6;
+    color: #343a40;
     padding: 1rem;
     text-align: center;
+    height: auto;
+    row-gap: 1rem;
 }
 
 .footer img {
     margin: 0 0.5rem;
-    max-height: 40px;
+    max-height: 55px;
 }
 
 .footer a {
@@ -257,6 +274,13 @@ h2 {
 .footer a:hover {
     color: #007bff;
 }
+
+.midia .social-icons{
+    border-bottom: 3px solid #dee2e6;
+    width: 35px;
+    height: auto;
+}
+
 
 /* Estilo para os controles do carrossel */
 .carousel-control-prev,
